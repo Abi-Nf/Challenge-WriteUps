@@ -26,6 +26,10 @@ The password is on the line where there is Password : *******
 
 ## Twitter Authentification
 
+---
+
+## ETHERNET Trame
+
 Get to [HexDecode](https://www.convertstring.com/fr/EncodeDecode/HexDecode) and paste the Hexadecimal data from file `ch3.txt` (downloaded on the site)
 Then decode it.
 
@@ -45,10 +49,6 @@ There is base64 data on the line `Authorization: Basic .....`, because it has **
 Copy the base64 data from the line where there is `Authorisation` : **Y29uZmk6ZGVudGlhbA==** and decode it on [RapidTable](https://www.rapidtables.com/web/tools/base64-decode.html)
 
 Then, we get the password
-
----
-
-## ETHERNET Trame
 
 ---
 
