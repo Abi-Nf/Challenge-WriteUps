@@ -52,7 +52,9 @@ Host: twitter.com
 ```
 
 decode the base64 data on line that have **Authorization** :
-dXNlcnRlc3Q6cGFzc3dvcmQ=
+dXNlcnRlc3Q6cGFzc3dvcmQ= on [RapidTable](https://www.rapidtables.com/web/tools/base64-decode.html)
+
+Then you got the decoded password after usertest:*****
 
 ---
 
@@ -81,3 +83,13 @@ Then, we get the password
 ---
 
 ## BLUETOOTH
+
+Open the file `ch18.bin` (downloaded on the website) in Wireshark.
+
+Hit the button `Wireless` (on the top).
+
+The click on the button `Bluetooth devices`.
+
+concatenate the Mac address and the name : 0C:B3:19:B9:4F:C6GT-S7390G.
+
+Then, hash it to SHA1 on [SHA1](https://www.sha1.fr/) and you get the password.
