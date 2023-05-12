@@ -5,9 +5,12 @@ Sovlving some challenges
 ## FTP
 
 Open the file `ch1.pcap` (donwloaded on the website) in Wireshark.
-Hit on button Analyser (on the top)
+
+Hit on button Analyser (on the top).
+
 Then, Hit on the button `Follow`.
-Then click on `TCP`
+
+Then click on `TCP flux`
 
 The password is on the line where there is pass : *******
 
@@ -16,15 +19,40 @@ The password is on the line where there is pass : *******
 ## TELNET
 
 Open the file `ch2.pcap` (downloaded on the website) in Wireshark.
-Hit on button Analyser (on the top)
+Hit on button Analyser (on the top).
+
 Then, Hit on the button `Follow`.
-Then click on `TCP`
+
+Then click on `TCP flux`
 
 The password is on the line where there is Password : *******
 
 ---
 
 ## Twitter Authentification
+
+Open the file `ch4.pcap` (downloaded on the website) in Wireshark.
+
+Hit the button `Analyser` (on the top).
+
+Then, Hit on the button `Follow`.
+
+Then click on `TCP flux`
+
+```cmd
+GET /statuses/replies.xml HTTP/1.1
+User-Agent: CFNetwork/330
+Cookie: _twitter_sess=BAh7CDoJdXNlcjA6B2lkIiVmZGQ2ODc5MTMwMWFhOTFiMWExZDViZmQwMGEz%250AOWNkMyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--ea12e7bc090d05202cd7e3f972c2b4414a97f657
+Accept: */*
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Authorization: Basic dXNlcnRlc3Q6cGFzc3dvcmQ=
+Connection: keep-alive
+Host: twitter.com
+```
+
+decode the base64 data on line that have **Authorization** :
+dXNlcnRlc3Q6cGFzc3dvcmQ=
 
 ---
 
