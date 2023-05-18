@@ -92,4 +92,23 @@ The click on the button `Bluetooth devices`.
 
 concatenate the Mac address and the name : 0C:B3:19:B9:4F:C6GT-S7390G.
 
-Then, hash it to SHA1 on [SHA1](https://www.sha1.fr/) and you get the password.
+Then, hash it to SHA1 encoding on [SHA1](https://www.sha1.fr/) and you get the password.
+
+## SSL - échange HTTP
+
+open file `ch5.pcap` from the challenge in Wireshark.
+
+Then with the hint : "google is your friend : inurl:server.pem...", let's get search
+in google and we may get first to this [bad url](https://github.com/fuzyll/defcon-vm/blob/master/extras/hfd/server.pem); but we need is on [This one](https://raw.githubusercontent.com/Hypernode/M2Crypto/master/demo/x509/server-expired.pem).
+
+the content file is like [this](./server.pem).
+
+Then, save the `RSA private key part` in a new file like **rsa.pem** for example.
+
+After, go to Wireshark preference and add the `rsa.pem` to rsa key
+
+then click on ANALYSER button and follow the flux tls.
+
+You get the password
+
+twisted by design
