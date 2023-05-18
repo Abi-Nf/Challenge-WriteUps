@@ -112,5 +112,3 @@ After, go to Wireshark preference and add the `rsa.pem` to rsa key
 then click on ANALYSER button and follow the flux tls.
 
 You get the password
-
-twisted by design
