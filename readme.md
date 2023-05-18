@@ -94,6 +94,8 @@ concatenate the Mac address and the name : 0C:B3:19:B9:4F:C6GT-S7390G.
 
 Then, hash it to SHA1 encoding on [SHA1](https://www.sha1.fr/) and you get the password.
 
+---
+
 ## SSL - échange HTTP
 
 open file `ch5.pcap` from the challenge in Wireshark.
